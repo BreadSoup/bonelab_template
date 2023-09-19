@@ -8,7 +8,7 @@ namespace bonelab_template // Must change this to the name of your mod or has a 
     {
         private static MelonPreferences_Category MelonPrefCategory { get; set; }
         private static MelonPreferences_Entry<bool> MelonPrefEnabled { get; set; }
-        internal static bool IsEnabled { get; private set; }
+        private static bool IsEnabled { get; set; }
         
             internal static void MelonPreferencesCreator()
             {

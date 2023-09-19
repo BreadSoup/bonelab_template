@@ -45,7 +45,7 @@ namespace bonelab_template // Must change this to the name of your mod or has a 
             MelonLogger.Msg("OnPreferencesLoaded");
         }
         
-        public static void OnSceneAwake()
+        public static void OnSceneAwake() //runs when the level is initialized
         {
             MelonLogger.Msg("OnSceneAwake");
         }
