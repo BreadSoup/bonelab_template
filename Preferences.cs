@@ -12,13 +12,13 @@ namespace bonelab_template // Must change this to the name of your mod or has a 
         
             internal static void MelonPreferencesCreator()
             {
-                MelonPreferences.CreateCategory(Main.ModName); // Create a new category in the MelonPreferences file
-                MelonPreferences.CreateEntry(Main.ModName, "Enabled", true, "Enable" + Main.ModName); // Create a new entry in the MelonPreferences file
+                MelonPreferences.CreateCategory(Main.Name); // Create a new category in the MelonPreferences file
+                MelonPreferences.CreateEntry(Main.Name, "Enabled", true, "Enable" + Main.Name); // Create a new entry in the MelonPreferences file
             }
 
         internal static void BoneMenuCreator()
         {
-            var category = MenuManager.CreateCategory(Main.ModName, Color.white); // Create a new category in the BoneMenu
+            var category = MenuManager.CreateCategory(Main.Name, Color.white); // Create a new category in the BoneMenu
             category.CreateBoolElement("Mod Toggle", "#FF5E00", IsEnabled, OnSetEnabled); // Create a mod toggle element in the BoneMenu
         }
 
